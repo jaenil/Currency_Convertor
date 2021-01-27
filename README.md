@@ -12,6 +12,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
 I am a young coder from India.So I dont have that much experience.You can contact me on discord at : JP1234#9518.
+
+#Uryell pls add your info
+
 This code is totally open source and you can fork it into your own repository .
 The API used for the project is https://api.exchangeratesapi.io/ .
 
