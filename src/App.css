@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -6,24 +6,49 @@ body{
   min-height: 100vh;
   text-align: center;
   font-size: xx-large;
+  background: #121013;
 }
-h1{
+h1 {
+  color: #ffe227;
   margin: 0;
   margin-bottom: 0.5rem;
 }
 
-.input{
-  border: 1px solid #333;
-  border-radius: .3em;
-  padding: .25rem;
-  width: 7em;
+p {
+  font-weight: 1000;
+  color: #4d375d;
+  font-size: 15px;
+  margin: 0;
 }
 
-select{
-  margin-left: 0.5rem;
+.input,
+select {
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem 0;
 }
 
-.equals{
+.input {
+  border-radius: 0.3em;
+}
+
+.equals {
   font-weight: bold;
   font-size: 2rem;
+  color: #ffe227;
+}
+
+.container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb596e;
+  border-radius: 10px;
+}
+
+.currencyRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
