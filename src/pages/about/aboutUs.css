@@ -1,0 +1,12 @@
+.aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 50vh;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.aboutUs-container > p {
+  color: #fff;
+}

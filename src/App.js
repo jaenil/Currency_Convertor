@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import CurrencyRow from "./CurrencyRow";
 
-
 const BASE_URL = "https://api.exchangeratesapi.io/latest";
 
 function App() {
@@ -49,7 +48,7 @@ function App() {
     setAmountInFromCurrency(false);
   }
   return (
-    <>
+    <div className="main-container">
       <h1>Convert</h1>
       <div className="container">
         <CurrencyRow
@@ -70,7 +69,7 @@ function App() {
           amount={toAmount}
         />
       </div>
-    </>
+    </div>
   );
 }
 
