@@ -4,7 +4,7 @@ import "./aboutUs.css"
 export default function aboutUs() {
     return (
         <div className="main-container">
-            Hello There
+            This is the about us page
         </div>
     )
 }

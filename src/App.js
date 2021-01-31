@@ -5,7 +5,7 @@ import CurrencyRow from "./CurrencyRow";
 
 const BASE_URL = "https://api.exchangeratesapi.io/latest";
 
-function App_function() {
+function App() {
   const [currencyOptions, setCurrencyOptions] = useState([]);
   const [fromCurrency, setFromCurrency] = useState([]);
   const [toCurrency, settoCurrency] = useState([]);
@@ -74,4 +74,4 @@ function App_function() {
   );
 }
 
-export default App_function;
+export default App;
