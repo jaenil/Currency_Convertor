@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import CurrencyRow from "./CurrencyRow";
+import CurrencyRow from "./components/currencyRow/CurrencyRow";
+import Footer from "./components/footer/Footer";
 
 const BASE_URL = "https://api.exchangeratesapi.io/latest";
 
@@ -48,9 +49,9 @@ function App() {
     setAmountInFromCurrency(false);
   }
   return (
-    <div className="main-container">
-      <h1>Convert</h1>
-      <div className="container">
+    <>
+      <h1>Currency Converter</h1>
+      <div className="main-container">
         <CurrencyRow
           currencyOptions={currencyOptions}
           selectedCurrency={fromCurrency}
@@ -58,9 +59,7 @@ function App() {
           onChangeAmount={handleFromAmountChange}
           amount={fromAmount}
         />
-      </div>
-      <div className="equals"> = </div>
-      <div className="container">
+        <div className="equals">=</div>
         <CurrencyRow
           currencyOptions={currencyOptions}
           selectedCurrency={toCurrency}
@@ -69,7 +68,8 @@ function App() {
           amount={toAmount}
         />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

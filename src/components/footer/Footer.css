@@ -1,0 +1,9 @@
+.footer-container {
+  width: 100%;
+  height: 4rem;
+  background: #4d375d;
+}
+
+.footer-container > p {
+  color: #fff;
+}

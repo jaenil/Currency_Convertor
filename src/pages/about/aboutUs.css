@@ -1,8 +1,9 @@
 .aboutUs-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: left;
-  height: 50vh;
+  height: 100vh;
   margin: 2rem;
   padding: 1rem;
 }
