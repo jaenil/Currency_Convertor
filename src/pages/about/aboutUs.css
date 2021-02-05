@@ -1,13 +1,36 @@
-.aboutUs-container {
+.aboutUs-main-container {
+  height: 100vh;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: left;
-  height: 100vh;
-  margin: 2rem;
-  padding: 1rem;
+}
+
+.aboutUs-container {
+  background: #314e52;
+  width: 400px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+
+.aboutUs-container > h1 {
+  margin-bottom: 2rem;
 }
 
 .aboutUs-container > p {
   color: #fff;
+  margin: 1rem 0;
+}
+
+.aboutUs-container > p > a {
+  color: #f2a154;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+  .aboutUs-container {
+    width: 800px;
+  }
 }

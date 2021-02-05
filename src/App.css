@@ -6,36 +6,50 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #121013;
-  position: relative;
+  background: #e7e6e1;
+  color: #f2a154;
 }
 
-h1 {
-  color: #ffe227;
-  margin-top: 2rem;
-  text-align: center;
+.header h1 {
   font-size: 4rem;
+  text-align: center;
 }
 
-p {
-  font-weight: 1000;
-  color: #4d375d;
-  font-size: 15px;
+.main-container,
+.sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .main-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: xx-large;
   padding: 1rem;
-  height: 100vh;
 }
 
-.equals {
-  font-weight: bold;
-  font-size: 5rem;
-  color: #ffe227;
+.sub-container {
+  background: #314e52;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+
+@media screen and (min-width: 750px) {
+  .main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "header header header header header"
+      ". container container container .";
+  }
+  .header {
+    grid-area: header;
+  }
+
+  .sub-container {
+    grid-area: container;
+  }
 }

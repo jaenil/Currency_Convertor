@@ -1,9 +1,22 @@
 .footer-container {
   width: 100%;
-  height: 4rem;
-  background: #4d375d;
+  background: #314e52;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-container > p {
+  text-align: center;
   color: #fff;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: #f2a154;
 }

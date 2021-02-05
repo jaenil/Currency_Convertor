@@ -50,23 +50,33 @@ function App() {
   }
   return (
     <>
-      <h1>Currency Converter</h1>
       <div className="main-container">
-        <CurrencyRow
-          currencyOptions={currencyOptions}
-          selectedCurrency={fromCurrency}
-          onChangeCurrency={(e) => setFromCurrency(e.target.value)}
-          onChangeAmount={handleFromAmountChange}
-          amount={fromAmount}
-        />
-        <div className="equals">=</div>
-        <CurrencyRow
-          currencyOptions={currencyOptions}
-          selectedCurrency={toCurrency}
-          onChangeCurrency={(e) => settoCurrency(e.target.value)}
-          onChangeAmount={handletoAmountChange}
-          amount={toAmount}
-        />
+        <div className="header">
+          <h1>Currency Converter</h1>
+        </div>
+        <div className="sub-container">
+          <div className="container">
+            <CurrencyRow
+              currencyOptions={currencyOptions}
+              selectedCurrency={fromCurrency}
+              onChangeCurrency={(e) => setFromCurrency(e.target.value)}
+              onChangeAmount={handleFromAmountChange}
+              amount={fromAmount}
+            />
+          </div>
+          <div className="container">
+            <h1>=</h1>
+          </div>
+          <div className="container">
+            <CurrencyRow
+              currencyOptions={currencyOptions}
+              selectedCurrency={toCurrency}
+              onChangeCurrency={(e) => settoCurrency(e.target.value)}
+              onChangeAmount={handletoAmountChange}
+              amount={toAmount}
+            />
+          </div>
+        </div>
       </div>
       <Footer />
     </>
